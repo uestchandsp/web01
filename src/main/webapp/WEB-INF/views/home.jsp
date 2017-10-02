@@ -14,7 +14,7 @@
 </head>
 <body>
 <h1>
-    Hello ${name}!
+    Hello ${name.name}!
 </h1>
 </body>
 </html>
