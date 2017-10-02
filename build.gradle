@@ -45,6 +45,14 @@ dependencies {
     compile 'javax.servlet:javax.servlet-api:3.1.0'
     compile 'org.eclipse.jetty:jetty-servlets:9.2.10.v20150310'
 
+    //dubbo
+    compile('com.alibaba:dubbo:2.5.3') {
+        exclude module: 'spring'
+        exclude module: 'javassist'
+    }
+    // zookeeper client
+    compile group: 'com.101tec', name: 'zkclient', version: '0.8'
+
     //testing
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
